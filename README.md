@@ -29,3 +29,22 @@ The configuration values are:
 - **Absolute date format**: use `YYYY-MM-DD` at the beginning or end of the title.
 - **Edit due date**: select a todo, press `e`, then enter a slash-command (e.g. `/tomorrow`), an ISO date (`YYYY-MM-DD`), or leave blank to clear the due date.
 - **Confirm deletion**: select a todo, press `d`, then type `y` (or `yes`) to delete or anything else to cancel.
+
+## Demo
+
+Below is an example screen recording (or animated GIF) demonstrating adding, editing, calendar navigation, and confirmation prompts:
+
+![Codex TODO Demo](assets/todo-demo.gif)
+
+### Generating the demo recording
+
+To create or update the animated demo yourself (tested on Ubuntu/Mint), first install the dependencies:
+```bash
+sudo apt update
+sudo apt install -y asciinema 
+cargo install --git https://github.com/asciinema/agg
+```
+Then run the recording script:
+```bash
+./scripts/record-demo.sh
+```
